@@ -5,7 +5,7 @@ const projectData = [
   {
     title: 'Ocean Plastic Detection - INSIGHTS (Hackathon)',
     description:
-      'An NLP-based web app to detect fake news using Logistic Regression and TF-IDF. Integrated with Firebase and Flask backend.',
+      'an OPENCV approach to detect Ocean Plastic.This is the code of team Hacktivists in Hackathon -INSIGHTS 2024,',
     //image: 'https://via.placeholder.com/300x180',
     github: 'https://github.com/mainakpal4/Hacktivists',
   },
