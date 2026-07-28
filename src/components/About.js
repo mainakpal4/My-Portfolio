@@ -14,11 +14,7 @@ function About() {
         />
         <div className="about-text">
           <p>
-            Hey there! 👋 I'm <strong>Mainak</strong>,
-             a <strong>Web developer  </strong>
-             , an <strong>ML enthusiast  </strong>
-             & a passionate Computer Science student
-            specializing in Artificial Intelligence and Machine Learning,with interest in deep learning
+            Hey there! 👋 I'm <strong>Mainak Pal</strong>, a <strong>Full Stack Web Developer</strong>, an <strong>ML Enthusiast</strong> & a passionate Computer Science student specializing in Artificial Intelligence and Machine Learning (B.Tech CSE AIML at IEM Kolkata).
           </p>
           <p>
             I love building <b>web applications</b> with modern tech stacks like <b> React, Javascript and AI Integration</b>
