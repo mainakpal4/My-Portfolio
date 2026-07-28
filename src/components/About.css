@@ -47,7 +47,7 @@
   height: 100%;
   pointer-events: none;
   border-radius: 50%;
-  animation: rotateCircle 16s linear infinite, fadePulse 8s ease-in-out infinite alternate;
+  animation: rotateCircle 12s linear infinite;
 }
 
 @keyframes rotateCircle {
@@ -56,24 +56,6 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes fadePulse {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  55% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
   }
 }
 

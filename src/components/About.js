@@ -13,14 +13,27 @@ function About() {
             className="profile-pic"
           />
           <svg className="rotating-text-svg" viewBox="0 0 300 300">
-            <path
-              id="circlePath"
-              d="M 150, 150 m -138, 0 a 138,138 0 1,1 276,0 a 138,138 0 1,1 -276,0"
-              fill="none"
-            />
-            <text fill="#22c55e" fontWeight="bold" fontSize="13.5" letterSpacing="3">
+            <defs>
+              <path
+                id="circlePath"
+                d="M 150, 150 m -138, 0 a 138,138 0 1,1 276,0 a 138,138 0 1,1 -276,0"
+              />
+              <mask id="blackRegionMask">
+                {/* White area is visible */}
+                <circle cx="150" cy="150" r="150" fill="white" />
+                {/* Black rect masks out bottom region where green banner is embedded in photo */}
+                <rect x="0" y="205" width="300" height="95" fill="black" />
+              </mask>
+            </defs>
+            <text
+              fill="#22c55e"
+              fontWeight="bold"
+              fontSize="14.5"
+              letterSpacing="2.5"
+              mask="url(#blackRegionMask)"
+            >
               <textPath href="#circlePath" startOffset="0%">
-                #OPENTOWORK • #OPENTOWORK • #OPENTOWORK • #OPENTOWORK •
+                #OPENTOWORK
               </textPath>
             </text>
           </svg>
