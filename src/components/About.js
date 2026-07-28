@@ -37,20 +37,20 @@ function About() {
         <h2><b>Resume</b></h2>
         <div className="resume-buttons">
           <a
-            href="https://drive.google.com/file/d/1dvRwCK82fdgHpyrSLwp5U3QcdhCimh-C/view?usp=sharing"
+            href="/Mainak_Pal_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-button view-resume"
           >
             View Resume  
           </a>
-          {/* <a
-            href="https://drive.google.com/file/d/1dvRwCK82fdgHpyrSLwp5U3QcdhCimh-C/view?usp=sharing"
-            download
+          <a
+            href="/Mainak_Pal_Resume.pdf"
+            download="Mainak_Pal_Resume.pdf"
             className="resume-button download-resume"
           >
             Download Resume
-          </a> */}
+          </a>
         </div>
       </div>
     </section>
