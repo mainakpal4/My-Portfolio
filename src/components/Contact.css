@@ -1,37 +1,99 @@
 .contact-section {
-    padding: 100px 20px;
-    background-color: #f4f6f8;
-    text-align: center;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 2rem auto;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    margin: 0.5rem 0;
-    padding: 12px 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-  
-  .contact-form button {
-    margin-top: 1rem;
-    padding: 12px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 100px 20px;
+  background-color: #f4f6f8;
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-size: 1.05rem;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.email-badge {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #007bff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.15);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 0.5rem 0;
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-send {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+}
+
+.btn-schedule {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #10b981;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-schedule:hover {
+  background-color: #059669;
+}

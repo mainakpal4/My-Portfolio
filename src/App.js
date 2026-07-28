@@ -24,13 +24,42 @@ function App() {
       <Achievements />
       <Contact />
       <ArtZest />
-      <Footer />
       
-      <section className="section header" id="home">
-        <h1>Nice to meet you 👋</h1>
-        <p>Looking forward to connect</p>
-        <h2>Have a great Day</h2>
+      {/* Horizontal Marquee Ticker Banner at the Bottom */}
+      <section className="bottom-marquee-bar" id="home">
+        <div className="marquee-track">
+          <div className="marquee-content">
+            <span>Nice to meet you 👋</span>
+            <span className="dot">•</span>
+            <span>Looking forward to connect 🤝</span>
+            <span className="dot">•</span>
+            <span>Have a great day ☀️</span>
+            <span className="dot">•</span>
+            <span>Nice to meet you 👋</span>
+            <span className="dot">•</span>
+            <span>Looking forward to connect 🤝</span>
+            <span className="dot">•</span>
+            <span>Have a great day ☀️</span>
+            <span className="dot">•</span>
+          </div>
+          <div className="marquee-content" aria-hidden="true">
+            <span>Nice to meet you 👋</span>
+            <span className="dot">•</span>
+            <span>Looking forward to connect 🤝</span>
+            <span className="dot">•</span>
+            <span>Have a great day ☀️</span>
+            <span className="dot">•</span>
+            <span>Nice to meet you 👋</span>
+            <span className="dot">•</span>
+            <span>Looking forward to connect 🤝</span>
+            <span className="dot">•</span>
+            <span>Have a great day ☀️</span>
+            <span className="dot">•</span>
+          </div>
+        </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
