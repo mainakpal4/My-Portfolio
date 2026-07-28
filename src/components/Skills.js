@@ -3,20 +3,19 @@ import './Skills.css';
 
 function Skills() {
   const skills = [
-    { name: 'Machine Learning', level: 'Beginner' },
-    { name: 'Web Development', level: 'Intermediate' },
-    { name: 'JAVA', level: 'Advanced' },
-    { name: 'C', level: 'Advanced' },
-    { name: 'Python', level: 'Advanced' },
-    { name: 'React', level: 'Intermediate' },
-    { name: 'JavaScript', level: 'Intermediate'},
-     { name: 'Deep Learning-CNN', level: 'Beginner' },
-   
+    { name: 'Full Stack Development (React, FastAPI, Node.js)', level: 'Advanced' },
+    { name: 'Blockchain & Smart Contracts (Solidity, Ethereum, IPFS)', level: 'Intermediate' },
+    { name: 'Backend Engineering (FastAPI, Flask, REST APIs)', level: 'Advanced' },
+    { name: 'Cloud & DevOps (AWS EC2/S3, GCP, Docker, Git, CI/CD)', level: 'Intermediate' },
+    { name: 'Databases (MongoDB Atlas, MySQL, SQL)', level: 'Advanced' },
+    { name: 'Programming Languages (Python, Java, C/C++, JavaScript, SQL)', level: 'Advanced' },
+    { name: 'AI / ML & Computer Vision (TensorFlow, PyTorch, Scikit-learn, OpenCV)', level: 'Intermediate' },
+    { name: 'Security & Auth (JWT, RBAC, OAuth, OTP Verification)', level: 'Intermediate' },
   ];
 
   return (
     <section className="skills-section" id="skills">
-      <h2>My Skills</h2>
+      <h2>My Technical Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div className="skill-card" key={index}>

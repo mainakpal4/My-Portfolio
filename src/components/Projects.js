@@ -3,46 +3,41 @@ import './Projects.css';
 
 const projectData = [
   {
+    title: 'EtherFineChain – Blockchain Traffic Violation & Penalty System',
+    description:
+      'Developed at Jalpaiguri Govt. Engineering College. A smart-contract-based access & enforcement system (Solidity, IPFS, Ethereum) with authenticated transaction logging, reducing processing time by 40%. Published in IEEE ICRCICN 2025.',
+    github: 'https://github.com/mainakpal4/EtherFineChain',
+    doi: 'https://doi.org/10.1109/ICRCICN68210.2025.11364919',
+  },
+  {
+    title: 'ShikshaSarathi – AI-Powered Accessible Education Platform',
+    description:
+      'Hack4Bihar Finalist. Built a full-stack accessibility platform using React.js, Flask, and REST APIs. Integrated Whisper and ResNet CNN modules via a modular API layer for ISL detection.',
+    github: 'https://github.com/mainakpal4',
+  },
+  {
+    title: 'YOUTHO – Career Recommendation Platform',
+    description:
+      'EY Techathon Finalist. Interactive platform for students built with React.js, Flask, MongoDB, and REST APIs, integrating a Random Forest recommendation engine into a scalable backend.',
+    github: 'https://github.com/mainakpal4/YOUTHO',
+  },
+  {
     title: 'Ocean Plastic Detection - INSIGHTS (Hackathon)',
     description:
-      'an OPENCV approach to detect Ocean Plastic.This is the code of team Hacktivists in Hackathon -INSIGHTS 2024,',
-    //image: 'https://via.placeholder.com/300x180',
+      'An OpenCV computer vision approach to detect Ocean Plastic. Built by team Hacktivists in departmental Hackathon INSIGHTS 2024.',
     github: 'https://github.com/mainakpal4/Hacktivists',
   },
   {
-    title: 'DSA_SOLUTION_PLATFORM- Social Winter of Code',
+    title: 'DSA Solution Platform',
     description:
-      'Open Source Contribution .The Smart DSA Notebook aims to aggregate solved questions from various coding platforms (LeetCode, Codeforces, GeeksforGeeks, etc.) into a unified interface. It will provide personalized features like search, filter, bookmarking, and progress tracking, allowing users to view their solutions directly on a single page.',
-    //image: 'https://via.placeholder.com/300x180',
+      'Social Winter of Code open source project. Aggregates solved coding questions from LeetCode, Codeforces, GeeksforGeeks into a unified React interface with search and progress tracking.',
     github: 'https://github.com/mainakpal4/DSA_SOLUTION_PLATFORM',
   },
   {
     title: 'ClimateGreen-AI',
     description:
-      'ClimateGreen-AI, Innovative Project (2024) an website integrated with ML prediction model to predict the future temperature and weather condition of a particular location entered by user',
-   // image: 'https://via.placeholder.com/300x180',
+      'Innovative Project (2024) integrated with an ML prediction model to predict future temperature and weather conditions of a given location.',
     github: 'https://github.com/mainakpal4/Innovative_Project_IEM',
-  },
-  // {
-  //   title: 'Crypto Portfolio Advisor',
-  //   description:
-  //     'Built a smart advisor that suggests crypto investment plans using KMeans Clustering + Flask + Bootstrap UI.',
-  //   //image: 'https://via.placeholder.com/300x180',
-  //   github: 'https://github.com/yourusername/crypto-portfolio-advisor',
-  // },
-  // {
-  //   title: 'SAR Image Colorization',
-  //   description:
-  //     'Used CNN to convert SAR grayscale images to colored images for remote sensing datasets. Hackathon Project.',
-  //  // image: 'https://via.placeholder.com/300x180',
-  //   github: 'https://github.com/yourusername/sar-image-colorization',
-  // },
-  {
-    title: 'YOUTHO',
-    description:
-      'YOUTHO -is an interactive platform for the students, by the students ,where they can do networking right from their home,learn from real life professionals,tracktheir progress as well as use this web-app as their personal document banks',
-   // image: 'https://via.placeholder.com/300x180',
-    github: 'https://github.com/mainakpal4/YOUTHO',
   },
 ];
 
@@ -53,12 +48,18 @@ function Projects() {
       <div className="projects-grid">
         {projectData.map((proj, index) => (
           <div className="project-card" key={index}>
-            {/* <img src={proj.image} alt={proj.title} /> */}
             <h3>{proj.title}</h3>
             <p>{proj.description}</p>
-            <a href={proj.github} target="_blank" rel="noopener noreferrer">
-              🔗 GitHub
-            </a>
+            <div className="project-links">
+              <a href={proj.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                🔗 GitHub Repo
+              </a>
+              {proj.doi && (
+                <a href={proj.doi} target="_blank" rel="noopener noreferrer" className="project-link doi-badge">
+                  📄 IEEE Paper
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>

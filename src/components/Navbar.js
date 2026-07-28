@@ -18,6 +18,7 @@ function Navbar() {
 
       <ul className={`nav-links ${open ? 'open' : ''}`}>
         <li><a href="#about" onClick={handleLinkClick}>About</a></li>
+        <li><a href="#experience" onClick={handleLinkClick}>Experience</a></li>
         <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
         <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
         <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
